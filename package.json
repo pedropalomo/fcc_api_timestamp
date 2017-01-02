@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon api_timestamp.js",
-    "start": "node api_timestamp.js"
+    "start": "node api_timestamp.js",
+    "postinstall": "ls"
   },
   "author": "",
   "license": "ISC",

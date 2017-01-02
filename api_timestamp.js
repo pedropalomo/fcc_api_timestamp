@@ -62,7 +62,6 @@ app.get('/*', function(req, res){
     var res_json;
     var err;
     
-
     var str_unix_time = req.originalUrl.slice(1);
     var int_unix_time = parseInt(str_unix_time);
     
@@ -79,6 +78,7 @@ app.get('/*', function(req, res){
 
 const port = 8080;
 const server = http.createServer(app);
-server.listen(port);
+//server.listen(port);
+server.listen(process.env.PORT || port)
 
 console.log('Server listening on: ', port);
